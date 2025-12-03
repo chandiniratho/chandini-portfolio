@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
-export default function App(){
+export default function App() {
   return (
     <div>
       <header className="header">
@@ -17,16 +17,20 @@ export default function App(){
 
       <main className="container">
         <Hero />
-        <section className="section">
+
+        {/* ABOUT SECTION */}
+        <section id="about" className="section">
           <About />
         </section>
 
-        <section className="section">
+        {/* SKILLS SECTION */}
+        <section id="skills" className="section">
           <div className="section-title">Tech Stack</div>
           <Skills />
         </section>
 
-        <section className="section">
+        {/* PROJECTS SECTION */}
+        <section id="projects" className="section">
           <div className="section-title">Projects</div>
           <Projects />
         </section>
